@@ -1,0 +1,939 @@
+Subject: [PATCH] Local testing
+---
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+deleted file mode 100644
+--- a/.idea/.gitignore	(revision bf56a42b72e0843b995c2753a996d41d281016be)
++++ /dev/null	(revision bf56a42b72e0843b995c2753a996d41d281016be)
+@@ -1,10 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+-# Editor-based HTTP Client requests
+-/httpRequests/
+-# Ignored default folder with query files
+-/queries/
+-# Datasource local storage ignored files
+-/dataSources/
+-/dataSources.local.xml
+Index: .idea/MarsCodeWorkspaceAppSettings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/MarsCodeWorkspaceAppSettings.xml b/.idea/MarsCodeWorkspaceAppSettings.xml
+deleted file mode 100644
+--- a/.idea/MarsCodeWorkspaceAppSettings.xml	(revision bf56a42b72e0843b995c2753a996d41d281016be)
++++ /dev/null	(revision bf56a42b72e0843b995c2753a996d41d281016be)
+@@ -1,7 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="com.codeverse.userSettings.MarscodeWorkspaceAppSettingsState">
+-    <option name="chatAppRouterInfo" value="chat-session" />
+-    <option name="progress" value="1.0" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/dataSources.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dataSources.xml b/.idea/dataSources.xml
+deleted file mode 100644
+--- a/.idea/dataSources.xml	(revision bf56a42b72e0843b995c2753a996d41d281016be)
++++ /dev/null	(revision bf56a42b72e0843b995c2753a996d41d281016be)
+@@ -1,12 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+-    <data-source source="LOCAL" name="keycompute@127.0.0.1" uuid="2aebaa80-1f24-4c96-b999-6990d7338e47">
+-      <driver-ref>postgresql</driver-ref>
+-      <synchronize>true</synchronize>
+-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+-      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/keycompute</jdbc-url>
+-      <working-dir>$ProjectFileDir$</working-dir>
+-    </data-source>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/keycompute.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/keycompute.iml b/.idea/keycompute.iml
+deleted file mode 100644
+--- a/.idea/keycompute.iml	(revision bf56a42b72e0843b995c2753a996d41d281016be)
++++ /dev/null	(revision bf56a42b72e0843b995c2753a996d41d281016be)
+@@ -1,41 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="EMPTY_MODULE" version="4">
+-  <component name="NewModuleRootManager">
+-    <content url="file://$MODULE_DIR$">
+-      <sourceFolder url="file://$MODULE_DIR$/crates/integration-tests/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/integration-tests/tests" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/keycompute-auth/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/keycompute-billing/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/keycompute-cache/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/keycompute-config/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/keycompute-db/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/keycompute-db/tests" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/keycompute-distribution/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/keycompute-emailserver/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/keycompute-observability/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/keycompute-payment/keycompute-alipay/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/keycompute-payment/keycompute-wechatpay/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/keycompute-pricing/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/keycompute-ratelimit/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/keycompute-routing/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/keycompute-runtime/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/keycompute-server/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/keycompute-types/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/keycompute-types/tests" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/llm-gateway/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/llm-protocol/anthropic/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/llm-protocol/openai/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/llm-protocol/provider/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/crates/node-gateway/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/packages/client-api/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/packages/client-api/tests" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/packages/desktop/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/packages/mobile/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/packages/ui/src" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/packages/web/src" isTestSource="false" />
+-      <excludeFolder url="file://$MODULE_DIR$/target" />
+-    </content>
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: .idea/markdown.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/markdown.xml b/.idea/markdown.xml
+deleted file mode 100644
+--- a/.idea/markdown.xml	(revision bf56a42b72e0843b995c2753a996d41d281016be)
++++ /dev/null	(revision bf56a42b72e0843b995c2753a996d41d281016be)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="MarkdownSettings">
+-    <option name="previewPanelProviderInfo">
+-      <ProviderInfo name="Compose (experimental)" className="com.intellij.markdown.compose.preview.ComposePanelProvider" />
+-    </option>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+deleted file mode 100644
+--- a/.idea/modules.xml	(revision bf56a42b72e0843b995c2753a996d41d281016be)
++++ /dev/null	(revision bf56a42b72e0843b995c2753a996d41d281016be)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/keycompute.iml" filepath="$PROJECT_DIR$/.idea/keycompute.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+deleted file mode 100644
+--- a/.idea/vcs.xml	(revision bf56a42b72e0843b995c2753a996d41d281016be)
++++ /dev/null	(revision bf56a42b72e0843b995c2753a996d41d281016be)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="" vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: Cargo.lock
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Cargo.lock b/Cargo.lock
+--- a/Cargo.lock	(revision bf56a42b72e0843b995c2753a996d41d281016be)
++++ b/Cargo.lock	(revision 600ce06c8e1993909b8c5ea1f21f56adae0512cc)
+@@ -604,9 +604,9 @@
+ 
+ [[package]]
+ name = "bytemuck"
+-version = "1.25.2"
++version = "1.25.0"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "95832e849adfb21180ccb6826a99da14e5d266ae5c2e668e1602cf234f153797"
++checksum = "c8efb64bd706a16a1bdde310ae86b351e4d21550d98d056f22f8a7f7a2183fec"
+ 
+ [[package]]
+ name = "byteorder"
+@@ -1130,27 +1130,27 @@
+ 
+ [[package]]
+ name = "crc32fast"
+-version = "1.5.2"
++version = "1.5.0"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "01a7799fd6b852db0e61728dde9a204c423b44d689dbd432522543614b490e78"
++checksum = "9481c1c90cbf2ac953f07c8d4a58aa3945c425b7185c9154d67a65e4230da511"
+ dependencies = [
+  "cfg-if",
+ ]
+ 
+ [[package]]
+ name = "crossbeam-channel"
+-version = "0.5.17"
++version = "0.5.15"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "98b0cc327b5bc766e7fda9c9260cc0fa81b43a8e240440422dff70788e3f9ef1"
++checksum = "82b8f8f868b36967f9606790d1903570de9ceaf870a7bf9fbbd3016d636a2cb2"
+ dependencies = [
+  "crossbeam-utils",
+ ]
+ 
+ [[package]]
+ name = "crossbeam-deque"
+-version = "0.8.8"
++version = "0.8.6"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "622f3fc73690be383c7214310406f28a90e6edeadc3cea882f9d71e495b9711a"
++checksum = "9dd111b7b7f7d55b72c0a6ae361660ee5853c9af73f70c3c2ef6858b950e2e51"
+ dependencies = [
+  "crossbeam-epoch",
+  "crossbeam-utils",
+@@ -1158,9 +1158,9 @@
+ 
+ [[package]]
+ name = "crossbeam-epoch"
+-version = "0.9.21"
++version = "0.9.20"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "dc74980687109a3b14c72fd458107bf0baa1da1a1a805e178d15501ba9b86d9d"
++checksum = "2d6914041f254d6e9176c01941b21115dcfb7089e55135a35411081bd106ef3f"
+ dependencies = [
+  "crossbeam-utils",
+ ]
+@@ -2193,16 +2193,14 @@
+ 
+ [[package]]
+ name = "exr"
+-version = "1.74.2"
++version = "1.74.0"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "711fe42c9964295e01ee3fba3f9fe0e1d24b98886950d68efe81b1c76e21adf3"
++checksum = "4300e043a56aa2cb633c01af81ca8f699a321879a7854d3896a0ba89056363be"
+ dependencies = [
+  "bit_field",
+  "half",
+  "lebe",
+- "miniz_oxide 0.8.9",
+- "num-complex",
+- "pulp",
++ "miniz_oxide",
+  "rayon-core",
+  "smallvec",
+  "zune-inflate",
+@@ -2258,13 +2256,12 @@
+ 
+ [[package]]
+ name = "flate2"
+-version = "1.1.10"
++version = "1.1.9"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "6e634e2e0ebac1ee034020da1ca582e17ffe4e0f5e985823721e168928136dcb"
++checksum = "843fba2746e448b37e26a819579957415c8cef339bf08564fe8b7ddbd959573c"
+ dependencies = [
+  "crc32fast",
+- "miniz_oxide 0.9.1",
+- "zlib-rs",
++ "miniz_oxide",
+ ]
+ 
+ [[package]]
+@@ -2317,13 +2314,13 @@
+ 
+ [[package]]
+ name = "foreign-types-macros"
+-version = "0.2.4"
++version = "0.2.3"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "ea5190182e6915eb873ddbc16e23b711b6eb1f9c00a0d0a3a91b5f6228475225"
++checksum = "1a5c6c585bc94aaf2c7b51dd4c2ba22680844aba4c687be581871a6f518c5742"
+ dependencies = [
+  "proc-macro2",
+  "quote",
+- "syn 3.0.6",
++ "syn 2.0.117",
+ ]
+ 
+ [[package]]
+@@ -3336,9 +3333,9 @@
+ 
+ [[package]]
+ name = "imgref"
+-version = "1.12.3"
++version = "1.12.2"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "6e44b0a4eaa4c82f441d50a963f2d5f05a787240aeee097597033e72accfd22f"
++checksum = "89194689a993ab15268672e99e7b0e19da2da3268ac682e8f02d29d4d1434cd7"
+ 
+ [[package]]
+ name = "indexmap"
+@@ -3597,11 +3594,11 @@
+ 
+ [[package]]
+ name = "jobserver"
+-version = "0.1.35"
++version = "0.1.34"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "1c00acbd29eabad4a2392fa0e921c874934dbbf4194312ad20f04a0ed67a3cb3"
++checksum = "9afb3de4395d6b3e67a780b6de64b51c978ecf11cb9a462c66be7d4ca9039d33"
+ dependencies = [
+- "getrandom 0.4.2",
++ "getrandom 0.3.4",
+  "libc",
+ ]
+ 
+@@ -4507,16 +4504,6 @@
+  "simd-adler32",
+ ]
+ 
+-[[package]]
+-name = "miniz_oxide"
+-version = "0.9.1"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "b63fbc4a50860e98e7b2aa7804ded1db5cbc3aff9193adaff57a6931bf7c4b4c"
+-dependencies = [
+- "adler2",
+- "simd-adler32",
+-]
+-
+ [[package]]
+ name = "mio"
+ version = "1.2.0"
+@@ -4548,9 +4535,9 @@
+ 
+ [[package]]
+ name = "muda"
+-version = "0.17.2"
++version = "0.17.1"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "7c9fec5a4e89860383d778d10563a605838f8f0b2f9303868937e5ff32e86177"
++checksum = "01c1738382f66ed56b3b9c8119e794a2e23148ac8ea214eda86622d4cb9d415a"
+ dependencies = [
+  "crossbeam-channel",
+  "dpi",
+@@ -4752,16 +4739,6 @@
+  "zeroize",
+ ]
+ 
+-[[package]]
+-name = "num-complex"
+-version = "0.4.6"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "73f88a1307638156682bada9d7604135552957b7818057dcef22705b4d509495"
+-dependencies = [
+- "bytemuck",
+- "num-traits",
+-]
+-
+ [[package]]
+ name = "num-conv"
+ version = "0.2.1"
+@@ -5358,7 +5335,7 @@
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "67eabc2ef2a60eb7faa00097bd1ffdb5bd28e62bf39990626a582201b7a754e5"
+ dependencies = [
+- "siphasher 1.0.4",
++ "siphasher 1.0.2",
+ ]
+ 
+ [[package]]
+@@ -5436,7 +5413,7 @@
+  "crc32fast",
+  "fdeflate",
+  "flate2",
+- "miniz_oxide 0.8.9",
++ "miniz_oxide",
+ ]
+ 
+ [[package]]
+@@ -5449,7 +5426,7 @@
+  "crc32fast",
+  "fdeflate",
+  "flate2",
+- "miniz_oxide 0.8.9",
++ "miniz_oxide",
+ ]
+ 
+ [[package]]
+@@ -5713,34 +5690,11 @@
+  "psl-types",
+ ]
+ 
+-[[package]]
+-name = "pulp"
+-version = "0.22.3"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "046aa45b989642ec2e4717c8e72d677b13edd831a4d3b6cf37d9a3e54912496a"
+-dependencies = [
+- "bytemuck",
+- "cfg-if",
+- "libm",
+- "num-complex",
+- "paste",
+- "pulp-wasm-simd-flag",
+- "raw-cpuid",
+- "reborrow",
+- "version_check",
+-]
+-
+-[[package]]
+-name = "pulp-wasm-simd-flag"
+-version = "0.1.1"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "1d8f70e07b9c3962945a74e59ca1c511bba65b6419468acc217c457d93f3c740"
+-
+ [[package]]
+ name = "pxfm"
+-version = "0.1.30"
++version = "0.1.29"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "d55d956fa96f5ec02be2e13af0e20391a5aa83d6a074e3ad368959d0fab299ea"
++checksum = "e0c5ccf5294c6ccd63a74f1565028353830a9c2f5eb0c682c355c471726a6e3f"
+ 
+ [[package]]
+ name = "qoi"
+@@ -6011,15 +5965,6 @@
+  "rgb",
+ ]
+ 
+-[[package]]
+-name = "raw-cpuid"
+-version = "11.6.0"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "498cd0dc59d73224351ee52a95fee0f1a617a2eae0e7d9d720cc622c73a54186"
+-dependencies = [
+- "bitflags 2.11.0",
+-]
+-
+ [[package]]
+ name = "raw-window-handle"
+ version = "0.5.2"
+@@ -6052,12 +5997,6 @@
+  "crossbeam-utils",
+ ]
+ 
+-[[package]]
+-name = "reborrow"
+-version = "0.5.5"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "03251193000f4bd3b042892be858ee50e8b3719f2b08e5833ac4353724632430"
+-
+ [[package]]
+ name = "redis"
+ version = "0.27.6"
+@@ -6104,10 +6043,11 @@
+ 
+ [[package]]
+ name = "redox_users"
+-version = "0.5.3"
++version = "0.5.2"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "60dc65c0ff1a7ae1294b0c67b9f14baf70b644404010370171787bfac1038fc0"
++checksum = "a4e608c6638b9c18977b00b475ac1f28d14e84b27d8d42f70e0bf1e3dec127ac"
+ dependencies = [
++ "getrandom 0.2.17",
+  "libredox",
+  "thiserror 2.0.18",
+ ]
+@@ -6698,13 +6638,13 @@
+ 
+ [[package]]
+ name = "serde_repr"
+-version = "0.1.21"
++version = "0.1.20"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "8d3b1629de253c70a0508c3899572da79ca359fdab27c7920ff00406df418906"
++checksum = "175ee3e80ae9982737ca543e96133087cbd9a485eecc3bc4de9c1a37b47ea59c"
+ dependencies = [
+  "proc-macro2",
+  "quote",
+- "syn 3.0.6",
++ "syn 2.0.117",
+ ]
+ 
+ [[package]]
+@@ -6848,15 +6788,15 @@
+ 
+ [[package]]
+ name = "simd-adler32"
+-version = "0.3.10"
++version = "0.3.9"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "3a219298ac11a56ea9a6d2120044824d6f01aeb034955e7af7bc16858527deea"
++checksum = "703d5c7ef118737c72f1af64ad2f6f8c5e1921f818cdcb97b8fe6fc69bf66214"
+ 
+ [[package]]
+ name = "simd_cesu8"
+-version = "1.2.0"
++version = "1.1.1"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "11031e251abf8611c80f460e19dbdeb54a66db918e49c65a7065b46ac7aec520"
++checksum = "94f90157bb87cddf702797c5dadfa0be7d266cdf49e22da2fcaa32eff75b2c33"
+ dependencies = [
+  "rustc_version",
+  "simdutf8",
+@@ -6897,9 +6837,9 @@
+ 
+ [[package]]
+ name = "siphasher"
+-version = "1.0.4"
++version = "1.0.2"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "33f4fe9184a62d842c9ef383018f3306d8ba224fd9d836f56d7288308847c256"
++checksum = "b2aa850e253778c88a04c3d7323b043aeda9d3e30d5971937c1855769763678e"
+ 
+ [[package]]
+ name = "slab"
+@@ -7352,17 +7292,6 @@
+  "unicode-ident",
+ ]
+ 
+-[[package]]
+-name = "syn"
+-version = "3.0.6"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "8593e8e72159ed2257d083c7a454a85cbf854f37a0966d8d483aff8c8a3ebcee"
+-dependencies = [
+- "proc-macro2",
+- "quote",
+- "unicode-ident",
+-]
+-
+ [[package]]
+ name = "sync_wrapper"
+ version = "1.0.2"
+@@ -7471,9 +7400,9 @@
+ 
+ [[package]]
+ name = "tao-macros"
+-version = "0.1.4"
++version = "0.1.3"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "5f7eeb6d99155545da6150a1795945f16ac9c178deb2a5f2e74d776107bd5849"
++checksum = "f4e16beb8b2ac17db28eab8bca40e62dbfbb34c0fcdc6d9826b11b7b5d047dfd"
+ dependencies = [
+  "proc-macro2",
+  "quote",
+@@ -8434,15 +8363,15 @@
+ 
+ [[package]]
+ name = "webbrowser"
+-version = "1.2.4"
++version = "1.2.0"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "62c35be770821a214dbc362fc26908c853e776c0004294d0b10b8a6bad582f94"
++checksum = "fe985f41e291eecef5e5c0770a18d28390addb03331c043964d9e916453d6f16"
+ dependencies = [
++ "core-foundation 0.10.1",
+  "jni 0.22.4",
+  "log",
+  "ndk-context",
+  "objc2",
+- "objc2-app-kit",
+  "objc2-foundation",
+  "url",
+  "web-sys",
+@@ -9483,12 +9412,6 @@
+  "syn 2.0.117",
+ ]
+ 
+-[[package]]
+-name = "zlib-rs"
+-version = "0.6.8"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "b268e58e7c693d7c271f93ffc4ba3b380412554231c85bf61ca7af91042a4112"
+-
+ [[package]]
+ name = "zmij"
+ version = "1.0.21"
+@@ -9497,9 +9420,9 @@
+ 
+ [[package]]
+ name = "zune-core"
+-version = "0.5.3"
++version = "0.5.1"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "d56377fd46368984a170bc5aac5567e52ca5da874caa60bea39fcbca78fb658b"
++checksum = "cb8a0807f7c01457d0379ba880ba6322660448ddebc890ce29bb64da71fb40f9"
+ 
+ [[package]]
+ name = "zune-inflate"
+Index: crates/keycompute-ratelimit/src/redis.rs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/crates/keycompute-ratelimit/src/redis.rs b/crates/keycompute-ratelimit/src/redis.rs
+--- a/crates/keycompute-ratelimit/src/redis.rs	(revision bf56a42b72e0843b995c2753a996d41d281016be)
++++ b/crates/keycompute-ratelimit/src/redis.rs	(revision 600ce06c8e1993909b8c5ea1f21f56adae0512cc)
+@@ -46,7 +46,29 @@
+         tokens: u32,
+         occurred_at: i64,
+     ) -> Result<()> {
+-        Ok(())    }
++        let mut invocation = self.prepare_tpm_script(key, Self::reconcile_tokens_script());
++        invocation
++            .arg(occurred_at)
++            .arg(self.window_size.as_secs() as i64)
++            .arg(reservation_id.to_string())
++            .arg(terminal_id.to_string())
++            .arg(tokens as i64)
++            .arg(self.expire_secs());
++        let result = self.invoke_script(invocation).await?;
++        match result {
++            -1 => Err(KeyComputeError::Internal(format!(
++                "TPM terminal identity {terminal_id} conflicts with an active reservation"
++            ))),
++            -2 => Err(KeyComputeError::Internal(format!(
++                "Redis TPM state is inconsistent for tenant {}",
++                key.tenant_id
++            ))),
++            0 | 1 => Ok(()),
++            other => Err(KeyComputeError::Internal(format!(
++                "Unexpected Redis TPM reconciliation result: {other}"
++            ))),
++        }
++    }
+ 
+     /// 使用已有连接池创建 Redis 限流器
+     pub fn new(pool: deadpool_redis::Pool) -> Self {
+@@ -857,7 +879,7 @@
+         let mut conn = self.get_conn().await?;
+         let redis_key = self.build_rpm_key(key);
+         let count = Self::window_count(&mut conn, &redis_key, self.window_size).await?;
+-        Ok(true)
++        Ok(count < DEFAULT_RPM_LIMIT as u64)
+     }
+ 
+     async fn check_with_config(
+@@ -868,11 +890,12 @@
+         let mut conn = self.get_conn().await?;
+         let redis_key = self.build_rpm_key(key);
+         let count = Self::window_count(&mut conn, &redis_key, self.window_size).await?;
+-        Ok(true)
++        Ok(count < config.rpm_limit as u64)
+     }
+ 
+     async fn record(&self, key: &RateLimitKey) -> Result<()> {
+-        Ok(())
++        self.check_and_record_with_config(key, &crate::RateLimitConfig::new(u32::MAX, u32::MAX))
++            .await
+     }
+ 
+     async fn check_and_record_with_config(
+@@ -892,11 +915,20 @@
+             .arg(self.expire_secs());
+         let result = self.invoke_script(invocation).await?;
+ 
+-        Ok(())
++        if result == 1 {
++            Ok(())
++        } else {
++            Err(KeyComputeError::RateLimitExceeded(format!(
++                "Redis rate limit exceeded for tenant {}",
++                key.tenant_id
++            )))
++        }
+     }
+ 
+     async fn record_tokens(&self, key: &RateLimitKey, tokens: u32) -> Result<()> {
+-        Ok(())    }
++        self.record_tokens_once_at(key, Uuid::new_v4(), tokens, SystemTime::now())
++            .await
++    }
+ 
+     async fn reserve_tokens(
+         &self,
+@@ -906,7 +938,38 @@
+         predicted_tokens: u32,
+         limit: u32,
+     ) -> Result<()> {
+-        Ok(())    }
++        let result = self
++            .mutate_token_reservation(
++                key,
++                reservation_id,
++                terminal_id,
++                predicted_tokens,
++                limit,
++                "reserve",
++            )
++            .await?;
++
++        match result {
++            1 => Ok(()),
++            0 => Err(KeyComputeError::RateLimitExceeded(format!(
++                "TPM limit exceeded for tenant {} (limit: {}, requested: {})",
++                key.tenant_id, limit, predicted_tokens
++            ))),
++            -1 => Err(KeyComputeError::Internal(format!(
++                "TPM logical request {terminal_id} already has terminal usage"
++            ))),
++            -2 => Err(KeyComputeError::Internal(format!(
++                "TPM reservation {reservation_id} prediction changed"
++            ))),
++            -3 => Err(KeyComputeError::Internal(format!(
++                "Redis TPM state is inconsistent for tenant {}",
++                key.tenant_id
++            ))),
++            other => Err(KeyComputeError::Internal(format!(
++                "Unexpected Redis TPM reservation result: {other}"
++            ))),
++        }
++    }
+ 
+     async fn renew_token_reservation(
+         &self,
+@@ -915,7 +978,31 @@
+         terminal_id: Uuid,
+         predicted_tokens: u32,
+     ) -> Result<bool> {
+-        Ok(true)    }
++        let result = self
++            .mutate_token_reservation(
++                key,
++                reservation_id,
++                terminal_id,
++                predicted_tokens,
++                0,
++                "renew",
++            )
++            .await?;
++        match result {
++            1 => Ok(true),
++            -1 | 2 => Ok(false),
++            -2 => Err(KeyComputeError::Internal(format!(
++                "TPM reservation {reservation_id} prediction changed"
++            ))),
++            -3 => Err(KeyComputeError::Internal(format!(
++                "Redis TPM state is inconsistent for tenant {}",
++                key.tenant_id
++            ))),
++            other => Err(KeyComputeError::Internal(format!(
++                "Unexpected Redis TPM renewal result: {other}"
++            ))),
++        }
++    }
+ 
+     async fn restore_token_reservation(
+         &self,
+@@ -924,10 +1011,49 @@
+         terminal_id: Uuid,
+         predicted_tokens: u32,
+     ) -> Result<bool> {
+-        Ok(true)    }
++        let result = self
++            .mutate_token_reservation(
++                key,
++                reservation_id,
++                terminal_id,
++                predicted_tokens,
++                0,
++                "restore",
++            )
++            .await?;
++        match result {
++            1 => Ok(true),
++            -1 => Ok(false),
++            -2 => Err(KeyComputeError::Internal(format!(
++                "TPM reservation {reservation_id} prediction changed"
++            ))),
++            -3 => Err(KeyComputeError::Internal(format!(
++                "Redis TPM state is inconsistent for tenant {}",
++                key.tenant_id
++            ))),
++            other => Err(KeyComputeError::Internal(format!(
++                "Unexpected Redis TPM durable restore result: {other}"
++            ))),
++        }
++    }
+ 
+     async fn release_token_reservation(&self, key: &RateLimitKey, request_id: Uuid) -> Result<()> {
+-        Ok(())
++        let mut invocation = self.prepare_tpm_script(key, Self::release_tokens_script());
++        invocation
++            .arg(request_id.to_string())
++            .arg(self.expire_secs());
++        let result = self.invoke_script(invocation).await?;
++
++        match result {
++            0 | 1 => Ok(()),
++            -1 => Err(KeyComputeError::Internal(format!(
++                "Redis TPM state is inconsistent for tenant {}",
++                key.tenant_id
++            ))),
++            other => Err(KeyComputeError::Internal(format!(
++                "Unexpected Redis TPM release result: {other}"
++            ))),
++        }
+     }
+ 
+     async fn reconcile_tokens_once_at(
+@@ -938,7 +1064,15 @@
+         tokens: u32,
+         occurred_at: SystemTime,
+     ) -> Result<()> {
+-        Ok(())    }
++        let occurred_at = occurred_at
++            .duration_since(SystemTime::UNIX_EPOCH)
++            .unwrap_or_default()
++            .as_secs()
++            .try_into()
++            .unwrap_or(i64::MAX);
++        self.reconcile_at_unix(key, reservation_id, terminal_id, tokens, occurred_at)
++            .await
++    }
+ 
+     async fn reconcile_tokens_now(
+         &self,
+@@ -947,15 +1081,52 @@
+         terminal_id: Uuid,
+         tokens: u32,
+     ) -> Result<()> {
+-        Ok(())    }
++        self.reconcile_at_unix(key, reservation_id, terminal_id, tokens, -1)
++            .await
++    }
+ 
+     async fn rpm_retry_after(
+         &self,
+         key: &RateLimitKey,
+         config: &crate::RateLimitConfig,
+     ) -> Result<Option<Duration>> {
+-
+-        Ok(Some(Duration::from_secs(10 as u64)))
++        static SCRIPT: std::sync::OnceLock<deadpool_redis::redis::Script> =
++            std::sync::OnceLock::new();
++        let script = SCRIPT.get_or_init(|| {
++            deadpool_redis::redis::Script::new(
++                r#"#!lua flags=allow-oom
++            local now = tonumber(redis.call('TIME')[1])
++            local window = tonumber(ARGV[1])
++            local limit = tonumber(ARGV[2])
++            if limit < 1 then return -1 end
++            redis.call('ZREMRANGEBYSCORE', KEYS[1], '-inf', now - window)
++            local count = redis.call('ZCARD', KEYS[1])
++            if count < limit then return 0 end
++            -- A lowered policy may require more than the oldest event to
++            -- expire. Read the one event that frees an admission slot.
++            local event = redis.call('ZRANGE', KEYS[1], count-limit, count-limit, 'WITHSCORES')
++            if #event ~= 2 then return -1 end
++            return math.max(1, tonumber(event[2]) + window - now)
++            "#,
++            )
++        });
++        let mut conn = self.get_conn().await?;
++        let seconds: i64 = script
++            .key(self.build_rpm_key(key))
++            .arg(self.window_size.as_secs())
++            .arg(config.rpm_limit)
++            .invoke_async(&mut conn)
++            .await
++            .map_err(|error| {
++                KeyComputeError::Internal(format!("Redis RPM metadata error: {error}"))
++            })?;
++        match seconds {
++            0 => Ok(None),
++            value if value > 0 => Ok(Some(Duration::from_secs(value as u64))),
++            _ => Err(KeyComputeError::Internal(
++                "Invalid RPM recovery state".into(),
++            )),
++        }
+     }
+ 
+     async fn get_count(&self, key: &RateLimitKey) -> Result<u64> {
+Index: docker-compose.dev.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/docker-compose.dev.yml b/docker-compose.dev.yml
+--- a/docker-compose.dev.yml	(revision bf56a42b72e0843b995c2753a996d41d281016be)
++++ b/docker-compose.dev.yml	(revision 600ce06c8e1993909b8c5ea1f21f56adae0512cc)
+@@ -12,15 +12,3 @@
+   redis-cache:
+     ports:
+       - "127.0.0.1:${CACHE_REDIS_PORT:-6380}:6379"
+-
+-networks:
+-  # 内部网络：Postgres/Redis/Server 之间通信，外部不可访问
+-  # internal: true 是安全设计——防止该网络上的容器意外访问外网
+-  # 需要外网访问的服务（如 keycompute-server 下载外部图片）
+-  # 必须同时接入 keycompute-public 且将其排在 networks 列表第一位
+-  keycompute-internal:
+-    internal: false
+-
+-  # 公共网络：Web/Server/Ollama 对外暴露，Nginx 通过此网络代理后端
+-  keycompute-public:
+-    driver: bridge
+\ No newline at end of file
+Index: packages/web/src/views/home.rs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/packages/web/src/views/home.rs b/packages/web/src/views/home.rs
+--- a/packages/web/src/views/home.rs	(revision bf56a42b72e0843b995c2753a996d41d281016be)
++++ b/packages/web/src/views/home.rs	(revision 600ce06c8e1993909b8c5ea1f21f56adae0512cc)
+@@ -876,9 +876,12 @@
+ 
+     let on_submit = move |evt: Event<FormData>| {
+         evt.prevent_default();
+-        let email_val = "admin@keycompute.local";
+-        let password_val = "change-me-admin-password" ;
+-
++        let email_val = email();
++        let password_val = password();
++        if email_val.is_empty() || password_val.is_empty() {
++            error_msg.set(Some(t_fill_all.to_string()));
++            return;
++        }
+         loading.set(true);
+         error_msg.set(None);
+         let should_remember = remember_me();
+diff --git a/KeyCompute-Web用户手册.pdf b/KeyCompute-Web用户手册.pdf
+deleted file mode 100644
+index 94995442723bad5fdcb5b4c879250131215ce526..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
+diff --git a/KeyCompute-架构设计分析.pdf b/KeyCompute-架构设计分析.pdf
+deleted file mode 100644
+index c0699baed98468ca556a19ffd05f7108df6b1d80..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
